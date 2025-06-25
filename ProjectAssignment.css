@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0cc4f7;
+  color: #fdeeb8;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: #29a1e6;
+}
+.logo {
+  width: 80px;
+  height: auto;
+}
+.twang-logo {
+  width: 300px; 
+  height: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fdeeb8;
+  padding: 0.5em;
+}
+.search-box {
+  padding: 0.4em;
+}
+.search-button {
+  background-color: #cd65ed;
+  border: none;
+  padding: 0.4em 0.6em;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+.overview {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 2em;
+}
+.app-display {
+  width: 100px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.overview > div {
+  flex: 1;
+  padding: 1em;
+  background-color:  #29a1e6;
+  border-radius: 10px;
+}
+.buttons {
+  display: block;
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: #1affa7;
+  border: none;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; 
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.testimonials {
+  background-color: #29a1e6;
+  padding: 2em;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #cd65ed;
+  padding: 1em;
+  border-radius: 10px;
+  width: 180px;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1affa7;
+  color: #000;
+}
