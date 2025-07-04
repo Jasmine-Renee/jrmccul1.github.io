@@ -11,10 +11,11 @@ body {
 }
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 1em 2em;
   background-color: #29a1e6;
+  flex-wrap: wrap;
 }
 .logo {
   width: 80px;
@@ -36,24 +37,81 @@ nav {
   gap: 1em;
   list-style: none;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #fdeeb8;
   padding: 0.5em;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #cd65ed;
+  border-bottom: 2px solid #cd65ed;
 }
 .search-box {
   padding: 0.4em;
+  margin-left: 1em;
 }
 .search-button {
   background-color: #cd65ed;
   border: none;
   padding: 0.4em 0.6em;
+  cursor: pointer;
+}
+.homepage-intro {
+  flex-wrap: wrap;
+  align-items: center;
 }
 .hero-image img {
   width: 100%;
   height: auto;
+}
+.teens-container {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teens-image {
+  width: 150%;         
+  max-width: 400px;   
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+.intro-text {
+  flex: 2;
+  min-width: 250px;
+}
+
+.buttons {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.buttons button {
+  background-color: #1affa7;
+  padding: 0.5em;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center; 
+  gap: 1em;                
+  height: 100%;            
 }
 .overview {
   display: flex;
@@ -74,19 +132,7 @@ nav {
   background-color:  #29a1e6;
   border-radius: 10px;
 }
-.buttons {
-  display: block;
-  margin-top: 1em;
-  padding: 0.5em;
-  background-color: #1affa7;
-  border: none;
-}
-.button-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px; 
-}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -126,4 +172,178 @@ footer {
   padding: 1em;
   background-color: #1affa7;
   color: #000;
+}
+.about-page {
+  background-color: #0cc4f7; 
+  color: #fdeeb8; 
+}
+p {
+  margin-bottom: 1em; 
+}
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.intro-text {
+  flex: 2;
+  min-width: 250px;
+}
+
+.founder-photo {
+  flex: 1;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.intro h2,
+.origin h2,
+.audience h2,
+.table-section h2 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.intro-text p,
+.origin p,
+.audience p {
+  color: #fdeeb8;
+}
+
+.comparison-table {
+  margin: 2em auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: #29a1e6;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-table th,
+.comparison-table td {
+  text-align: left;
+  padding: 1em;
+  border-bottom: 1px solid #fff;
+}
+
+.comparison-table th {
+  background-color: #cd65ed;
+  color: #fff;
+}
+
+.comparison-table td:first-child {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .comparison-table {
+    font-size: 0.9em;
+  }
+}
+
+.safety-page {
+  background-color: #0cc4f7;
+  color: #fdeeb8;
+  padding: 2em;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.safety-section {
+  margin-bottom: 2em;
+  background-color: #29a1e6;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.safety-section h2 {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.safety-page {
+  background-color: #0cc4f7;
+  color: #fdeeb8;
+  padding: 2em;
+}
+
+.students-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+}
+
+.info-section {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  background-color: #29a1e6;
+  padding: 1.5em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.info-section.alt {
+  background-color: #cd65ed;
+  color: #fff;
+}
+
+.safety-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.apply-section {
+  background-color: #cd65ed;
+  color: #000;
+  text-align: center;
+  padding: 2em;
+  border-radius: 12px;
+}
+
+.apply-buttons button {
+  background-color: #1affa7;
+  color: #000;
+  border: none;
+  padding: 0.8em 1.2em;
+  margin: 0.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
