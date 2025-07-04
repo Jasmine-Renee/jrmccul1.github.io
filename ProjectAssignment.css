@@ -299,11 +299,12 @@ p {
   padding: 2em;
 }
 
-.students-img {
+.banner-img {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
   border-radius: 12px;
+  display: block;
   margin-bottom: 1em;
 }
 
