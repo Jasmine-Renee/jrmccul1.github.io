@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources | TWANG</title>
+  <link rel="stylesheet" href="ProjectAssignment.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="TWANG.png" alt="TWANG Logo" class="twang-logo" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="safety.html">Safety & Encouragement</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <input type="text" placeholder="Search" class="search-box" />
+      <button class="search-button">🔍</button>
+    </nav>
+  </header>
+
+  <main class="resources-section">
+	<div class="content-container">
+    <h1>Resources & Applications</h1>
+
+    <div class="form-pair">
+      <!-- Resource Submission Form -->
+      <section class="form-box resource-form">
+        <h2>Submit a Community Resource</h2>
+		<p>Parents, educators, and districts can submit helpful links, programs, or support services that may benefit students on TWANG.</p>
+        <form>
+          <label>Your Name:
+            <input type="text" required placeholder="Jane Doe">
+          </label>
+          <label>Email Address:
+            <input type="email" required placeholder="jane@example.com">
+          </label>
+          <label>Your Role:
+            <select required>
+              <option disabled selected>Select Role</option>
+              <option>Parent</option>
+              <option>Educator</option>
+              <option>District</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Resource Description:
+            <textarea rows="4" placeholder="Share helpful details..." required></textarea>
+          </label>
+          <label>Link to Resource:
+            <input type="url" placeholder="https://example.com" required>
+          </label>
+          <button type="submit">Submit Resource</button>
+        </form>
+      </section>
+
+      <!-- Application Form -->
+      <section class="form-box application-form">
+        <h2>Student Application</h2>
+        <form>
+          <label>First Name*:
+            <input type="text" required>
+          </label>
+          <label>Last Name*:
+            <input type="text" required>
+          </label>
+          <label>Email*:
+            <input type="email" required>
+          </label>
+          <label>School/District*:
+            <input type="text" required>
+          </label>
+          <label>Date of Birth*:
+            <input type="date" required>
+          </label>
+          <label>School Year*:
+            <input type="text" required>
+          </label>
+          <label>Address*:
+            <input type="text" required>
+          </label>
+          <label>Parent/Guardian Authorization*:
+            <input type="text" required>
+          </label>
+          <label>Interests/Hobbies:
+            <input type="text">
+          </label>
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TWANG. All rights reserved.</p>
+  </footer>
+</body>
+</html>

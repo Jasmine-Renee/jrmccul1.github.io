@@ -5,58 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TWANG</title>
   <link rel="stylesheet" href="ProjectAssignment.css" />
-  <style>
-  .overview {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 2em;
-      padding: 2em;
-    }
-
-    .overview > div {
-      flex: 1;
-      min-width: 250px;
-      max-width: 33%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #29a1e6;
-      border-radius: 10px;
-      padding: 1em;
-      box-sizing: border-box;
-    }
-
-    .app-display {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 */
-      margin-bottom: 1em;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    @media (max-width: 768px) {
-      .overview {
-        flex-direction: column;
-      }
-
-      .overview > div {
-        max-width: 100%;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -93,7 +41,8 @@
       <div class="middle">
         <h2>The Impacts of Social Media, and How We Can Combat it</h2>
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/Z1BpYDkGoAs" frameborder="0" allowfullscreen></iframe>
+			<video controls width="100%">
+			<source src="video.mp4" type="video/mp4"/>
         </div>
       </div>
       <div class="right">
